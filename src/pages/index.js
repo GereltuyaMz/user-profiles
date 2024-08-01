@@ -69,9 +69,7 @@ export default function Home() {
   };
 
   const deleteUser = (userId) => {
-    console.log("userId", userId)
     const deletedUser = users.filter((user) => user.id !== userId);
-    console.log("deletedUser", deletedUser)
     setUsers(deletedUser)
   }
 
